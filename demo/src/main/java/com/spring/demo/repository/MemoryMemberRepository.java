@@ -1,4 +1,4 @@
-package repository;
+package com.spring.demo.repository;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -36,5 +36,9 @@ public class MemoryMemberRepository implements MemberRepository {
 	@Override
 	public List<Member> findAllI() {
 		return new ArrayList<>(store.values());
+	}
+	
+	public void clearStore() {
+		store.clear();
 	}
 }
