@@ -1,4 +1,4 @@
-package com.spring.prj.demo.domain;
+package com.spring.demo.domain;
 
 public class Member {
 	private Long id;

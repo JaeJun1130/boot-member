@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
-import com.spring.prj.demo.domain.Member;
+import com.spring.demo.domain.Member;
 
 public class MemoryMemberRepository implements MemberRepository {
 	

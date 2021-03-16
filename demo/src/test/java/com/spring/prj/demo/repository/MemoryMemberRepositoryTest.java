@@ -8,8 +8,8 @@ import java.util.List;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
 
+import com.spring.demo.domain.Member;
 import com.spring.demo.repository.MemoryMemberRepository;
-import com.spring.prj.demo.domain.Member;
 
 
 public class MemoryMemberRepositoryTest {

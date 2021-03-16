@@ -3,7 +3,7 @@ package com.spring.demo.repository;
 import java.util.List;
 import java.util.Optional;
 
-import com.spring.prj.demo.domain.Member;
+import com.spring.demo.domain.Member;
 
 public interface MemberRepository {
 	Member save(Member member);
