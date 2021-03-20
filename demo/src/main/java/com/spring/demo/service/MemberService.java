@@ -9,7 +9,11 @@ import com.spring.demo.repository.MemoryMemberRepository;
 
 public class MemberService {
 
-	private final MemberRepository memberRepository = new MemoryMemberRepository();
+	private final MemberRepository memberRepository;
+	
+	public MemberService(MemberRepository memberRepository) {
+		this.memberRepository = memberRepository;
+	}
 
 	// 회원가입
 	public Long join(Member member) {
@@ -26,11 +30,11 @@ public class MemberService {
 		});
 	}
 	//전체 회원조회
-	private List<Member> findMember() {
+	public List<Member> findMember() {
 		return memberRepository.findAllI();
 	}
 	
-	private Optional<Member> findOne(Long memberId) {
+	public Optional<Member> findOne(Long memberId) {
 		return memberRepository.findById(memberId);
 	}
 
