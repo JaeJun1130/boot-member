@@ -1,4 +1,4 @@
-package com.spring.demo.repository;
+package com.spirng.demo.repository;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -8,7 +8,7 @@ import java.util.Optional;
 
 import org.springframework.stereotype.Repository;
 
-import com.spring.demo.domain.Member;
+import com.spirng.demo.domain.Member;
 
 public class MemoryMemberRepository implements MemberRepository {
 	

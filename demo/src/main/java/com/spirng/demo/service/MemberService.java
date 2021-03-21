@@ -1,4 +1,4 @@
-package com.spring.demo.service;
+package com.spirng.demo.service;
 
 import java.util.List;
 import java.util.Optional;
@@ -6,14 +6,15 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.spring.demo.domain.Member;
-import com.spring.demo.repository.MemberRepository;
-import com.spring.demo.repository.MemoryMemberRepository;
+import com.spirng.demo.domain.Member;
+import com.spirng.demo.repository.MemberRepository;
+import com.spirng.demo.repository.MemoryMemberRepository;
 
 public class MemberService {
 
 	private final MemberRepository memberRepository;
 	
+	//생성자 주입
 	public MemberService(MemberRepository memberRepository) {
 		this.memberRepository = memberRepository;
 	}

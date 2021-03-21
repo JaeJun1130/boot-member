@@ -9,9 +9,9 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import com.spring.demo.domain.Member;
-import com.spring.demo.repository.MemoryMemberRepository;
-import com.spring.demo.service.MemberService;
+import com.spirng.demo.domain.Member;
+import com.spirng.demo.repository.MemoryMemberRepository;
+import com.spirng.demo.service.MemberService;
 
 public class MemberServiceTest {
 	

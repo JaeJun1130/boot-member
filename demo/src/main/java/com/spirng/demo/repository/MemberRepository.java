@@ -1,9 +1,9 @@
-package com.spring.demo.repository;
+package com.spirng.demo.repository;
 
 import java.util.List;
 import java.util.Optional;
 
-import com.spring.demo.domain.Member;
+import com.spirng.demo.domain.Member;
 
 public interface MemberRepository {
 	Member save(Member member);
