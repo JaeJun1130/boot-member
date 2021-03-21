@@ -3,6 +3,9 @@ package com.spring.demo.service;
 import java.util.List;
 import java.util.Optional;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
 import com.spring.demo.domain.Member;
 import com.spring.demo.repository.MemberRepository;
 import com.spring.demo.repository.MemoryMemberRepository;
