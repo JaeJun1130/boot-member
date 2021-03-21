@@ -1,7 +1,10 @@
 package com.spirng.demo.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
@@ -18,6 +21,7 @@ public class MemberController {
 		this.memberService = memberService;
 	}
 	
+	/*회원등록 start */
 	@GetMapping("/members/new")
 	public String creatForm() {
 		return "members/createMemberForm";
@@ -31,6 +35,16 @@ public class MemberController {
 		
 		memberService.join(member);
 		return "redirect:/";
+	}
+	/*회원등록 End */
+	
+	/*회원조회 start */
+	@GetMapping("/members")
+	public String list(Model model) {
+		List<Member> members = memberService.findMember();
+		model.addAttribute("members", members);
+		return "members/memberList";
+
 	}
 	
 }
