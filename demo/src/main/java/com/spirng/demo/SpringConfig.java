@@ -10,7 +10,6 @@ import org.springframework.context.annotation.Configuration;
 import com.spirng.demo.repository.JdbcMemberRepository;
 import com.spirng.demo.repository.MemberRepository;
 import com.spirng.demo.service.MemberService;
-import org.springframework.jdbc.datasource.DataSourceUtils;
 
 @Configuration
 
